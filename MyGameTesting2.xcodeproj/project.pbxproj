@@ -15,8 +15,20 @@
 		0A0375451D629A58002059D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0375431D629A58002059D8 /* Main.storyboard */; };
 		0A0375471D629A58002059D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0375461D629A58002059D8 /* Assets.xcassets */; };
 		0A03754A1D629A58002059D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0375481D629A58002059D8 /* LaunchScreen.storyboard */; };
-		0A0375551D62C167002059D8 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0375541D62C166002059D8 /* Hero.m */; };
 		0A99372A1D64FA4A00451749 /* Gallop.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 0A9937291D64FA4A00451749 /* Gallop.atlas */; };
+		0A9937321D6520A500451749 /* GallopShadow.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 0A9937311D6520A500451749 /* GallopShadow.atlas */; };
+		0A9937471D6525E400451749 /* BasicAnimatedNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9937461D6525E400451749 /* BasicAnimatedNode.m */; };
+		0A99374B1D65264D00451749 /* Horse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A99374A1D65264D00451749 /* Horse.m */; };
+		0A99374E1D65265A00451749 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A99374D1D65265A00451749 /* Human.m */; };
+		0A9937511D65266300451749 /* Shadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9937501D65266300451749 /* Shadow.m */; };
+		0A9937541D65268200451749 /* Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9937531D65268200451749 /* Unit.m */; };
+		0A9937571D65271100451749 /* MountedHero.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9937561D65271100451749 /* MountedHero.m */; };
+		0A99375A1D653CAD00451749 /* UnitAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9937591D653CAD00451749 /* UnitAnimator.m */; };
+		0A99375D1D65681100451749 /* Blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A99375C1D65681100451749 /* Blank.png */; };
+		0A9937611D657F4300451749 /* GallopLeft.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 0A9937601D657F4300451749 /* GallopLeft.atlas */; };
+		0A9937651D65811B00451749 /* GallopRight.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 0A9937641D65811B00451749 /* GallopRight.atlas */; };
+		0A9937681D658FC400451749 /* UnitInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9937671D658FC400451749 /* UnitInitializer.m */; };
+		0A99376C1D65954400451749 /* LaneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A99376B1D65954400451749 /* LaneView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +45,29 @@
 		0A0375461D629A58002059D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A0375491D629A58002059D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A03754B1D629A58002059D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A0375531D62C166002059D8 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
-		0A0375541D62C166002059D8 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 		0A9937291D64FA4A00451749 /* Gallop.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Gallop.atlas; sourceTree = "<group>"; };
+		0A9937311D6520A500451749 /* GallopShadow.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = GallopShadow.atlas; sourceTree = "<group>"; };
+		0A9937451D6525E400451749 /* BasicAnimatedNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicAnimatedNode.h; path = ../BasicAnimatedNode.h; sourceTree = "<group>"; };
+		0A9937461D6525E400451749 /* BasicAnimatedNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicAnimatedNode.m; path = ../BasicAnimatedNode.m; sourceTree = "<group>"; };
+		0A9937491D65264D00451749 /* Horse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Horse.h; sourceTree = "<group>"; };
+		0A99374A1D65264D00451749 /* Horse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Horse.m; sourceTree = "<group>"; };
+		0A99374C1D65265A00451749 /* Human.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		0A99374D1D65265A00451749 /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		0A99374F1D65266300451749 /* Shadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shadow.h; sourceTree = "<group>"; };
+		0A9937501D65266300451749 /* Shadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shadow.m; sourceTree = "<group>"; };
+		0A9937521D65268200451749 /* Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unit.h; sourceTree = "<group>"; };
+		0A9937531D65268200451749 /* Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Unit.m; sourceTree = "<group>"; };
+		0A9937551D65271100451749 /* MountedHero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MountedHero.h; sourceTree = "<group>"; };
+		0A9937561D65271100451749 /* MountedHero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MountedHero.m; sourceTree = "<group>"; };
+		0A9937581D653CAD00451749 /* UnitAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitAnimator.h; sourceTree = "<group>"; };
+		0A9937591D653CAD00451749 /* UnitAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitAnimator.m; sourceTree = "<group>"; };
+		0A99375C1D65681100451749 /* Blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blank.png; sourceTree = "<group>"; };
+		0A9937601D657F4300451749 /* GallopLeft.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = GallopLeft.atlas; sourceTree = "<group>"; };
+		0A9937641D65811B00451749 /* GallopRight.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = GallopRight.atlas; sourceTree = "<group>"; };
+		0A9937661D658FC400451749 /* UnitInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitInitializer.h; sourceTree = "<group>"; };
+		0A9937671D658FC400451749 /* UnitInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitInitializer.m; sourceTree = "<group>"; };
+		0A99376A1D65954400451749 /* LaneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaneView.h; sourceTree = "<group>"; };
+		0A99376B1D65954400451749 /* LaneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaneView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				0A0375341D629A58002059D8 /* MyGameTesting2 */,
+				0A9937691D6594CB00451749 /* FuckingShit */,
 				0A0375331D629A57002059D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,19 +101,15 @@
 		0A0375341D629A58002059D8 /* MyGameTesting2 */ = {
 			isa = PBXGroup;
 			children = (
-				0A9937291D64FA4A00451749 /* Gallop.atlas */,
-				0A0375381D629A58002059D8 /* AppDelegate.h */,
-				0A0375391D629A58002059D8 /* AppDelegate.m */,
+				0A99375B1D6549FC00451749 /* Assets */,
+				0A9937481D65262300451749 /* SKSpriteNodes */,
+				0A99376A1D65954400451749 /* LaneView.h */,
+				0A99376B1D65954400451749 /* LaneView.m */,
 				0A03753B1D629A58002059D8 /* GameScene.h */,
 				0A03753C1D629A58002059D8 /* GameScene.m */,
-				0A0375531D62C166002059D8 /* Hero.h */,
-				0A0375541D62C166002059D8 /* Hero.m */,
-				0A03753E1D629A58002059D8 /* GameScene.sks */,
 				0A0375401D629A58002059D8 /* GameViewController.h */,
 				0A0375411D629A58002059D8 /* GameViewController.m */,
-				0A0375431D629A58002059D8 /* Main.storyboard */,
 				0A0375461D629A58002059D8 /* Assets.xcassets */,
-				0A0375481D629A58002059D8 /* LaunchScreen.storyboard */,
 				0A03754B1D629A58002059D8 /* Info.plist */,
 				0A0375351D629A58002059D8 /* Supporting Files */,
 			);
@@ -90,9 +119,57 @@
 		0A0375351D629A58002059D8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0A0375381D629A58002059D8 /* AppDelegate.h */,
+				0A0375391D629A58002059D8 /* AppDelegate.m */,
+				0A9937581D653CAD00451749 /* UnitAnimator.h */,
+				0A9937591D653CAD00451749 /* UnitAnimator.m */,
+				0A9937661D658FC400451749 /* UnitInitializer.h */,
+				0A9937671D658FC400451749 /* UnitInitializer.m */,
 				0A0375361D629A58002059D8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A9937481D65262300451749 /* SKSpriteNodes */ = {
+			isa = PBXGroup;
+			children = (
+				0A9937451D6525E400451749 /* BasicAnimatedNode.h */,
+				0A9937461D6525E400451749 /* BasicAnimatedNode.m */,
+				0A9937491D65264D00451749 /* Horse.h */,
+				0A99374A1D65264D00451749 /* Horse.m */,
+				0A99374C1D65265A00451749 /* Human.h */,
+				0A99374D1D65265A00451749 /* Human.m */,
+				0A99374F1D65266300451749 /* Shadow.h */,
+				0A9937501D65266300451749 /* Shadow.m */,
+				0A9937551D65271100451749 /* MountedHero.h */,
+				0A9937561D65271100451749 /* MountedHero.m */,
+				0A9937521D65268200451749 /* Unit.h */,
+				0A9937531D65268200451749 /* Unit.m */,
+			);
+			name = SKSpriteNodes;
+			sourceTree = "<group>";
+		};
+		0A99375B1D6549FC00451749 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0A9937641D65811B00451749 /* GallopRight.atlas */,
+				0A9937601D657F4300451749 /* GallopLeft.atlas */,
+				0A9937311D6520A500451749 /* GallopShadow.atlas */,
+				0A9937291D64FA4A00451749 /* Gallop.atlas */,
+				0A99375C1D65681100451749 /* Blank.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		0A9937691D6594CB00451749 /* FuckingShit */ = {
+			isa = PBXGroup;
+			children = (
+				0A03753E1D629A58002059D8 /* GameScene.sks */,
+				0A0375481D629A58002059D8 /* LaunchScreen.storyboard */,
+				0A0375431D629A58002059D8 /* Main.storyboard */,
+			);
+			name = FuckingShit;
+			path = MyGameTesting2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,9 +230,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9937321D6520A500451749 /* GallopShadow.atlas in Resources */,
+				0A99375D1D65681100451749 /* Blank.png in Resources */,
+				0A9937651D65811B00451749 /* GallopRight.atlas in Resources */,
 				0A03753F1D629A58002059D8 /* GameScene.sks in Resources */,
 				0A03754A1D629A58002059D8 /* LaunchScreen.storyboard in Resources */,
 				0A0375471D629A58002059D8 /* Assets.xcassets in Resources */,
+				0A9937611D657F4300451749 /* GallopLeft.atlas in Resources */,
 				0A0375451D629A58002059D8 /* Main.storyboard in Resources */,
 				0A99372A1D64FA4A00451749 /* Gallop.atlas in Resources */,
 			);
@@ -168,9 +249,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A0375551D62C167002059D8 /* Hero.m in Sources */,
+				0A9937541D65268200451749 /* Unit.m in Sources */,
+				0A99374E1D65265A00451749 /* Human.m in Sources */,
+				0A9937511D65266300451749 /* Shadow.m in Sources */,
+				0A99375A1D653CAD00451749 /* UnitAnimator.m in Sources */,
+				0A9937681D658FC400451749 /* UnitInitializer.m in Sources */,
 				0A0375421D629A58002059D8 /* GameViewController.m in Sources */,
+				0A9937471D6525E400451749 /* BasicAnimatedNode.m in Sources */,
+				0A9937571D65271100451749 /* MountedHero.m in Sources */,
 				0A03753A1D629A58002059D8 /* AppDelegate.m in Sources */,
+				0A99376C1D65954400451749 /* LaneView.m in Sources */,
+				0A99374B1D65264D00451749 /* Horse.m in Sources */,
 				0A03753D1D629A58002059D8 /* GameScene.m in Sources */,
 				0A0375371D629A58002059D8 /* main.m in Sources */,
 			);
