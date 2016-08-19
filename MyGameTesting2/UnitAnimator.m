@@ -45,32 +45,100 @@
         
 }
 
-+ (void)heroRide: (SKSpriteNode *)horse withDirection: (NSString *)direction WithFrameRate: (float) frameRate {
++ (void)heroWeaponRide: (SKSpriteNode *)weapon toDirection: (NSString *)direction withFrameRate: (float) frameRate andWeapon: (NSString *)weaponName{
+    NSArray *heroRideTextureArray = [UnitAnimator animateUnitWithTextureAtlasName:@"WeaponKnifeRide"];
+    NSArray *heroRideLeftTextureArray = [UnitAnimator animateUnitWithTextureAtlasName:@"WeaponKnifeRideLeft"];
+    NSArray *heroRideRightTextureArray = [UnitAnimator animateUnitWithTextureAtlasName:@"WeaponKnifeRideRight"];
+    
+    if ([direction isEqualToString:@"Left"]) {
+        [weapon runAction:[SKAction animateWithTextures:heroRideLeftTextureArray timePerFrame:frameRate]
+             completion:^{
+                 [weapon runAction:[SKAction repeatActionForever:[SKAction animateWithTextures:heroRideTextureArray
+                                                                                timePerFrame:frameRate
+                                                                                      resize:NO
+                                                                                     restore:YES]] withKey:[NSString stringWithFormat:@"kWeaponRide%@", direction]];
+             }];
+    }
+    
+    if ([direction isEqualToString:@"Right"]) {
+        [weapon runAction:[SKAction animateWithTextures:heroRideRightTextureArray timePerFrame:frameRate]
+             completion:^{
+                 [weapon runAction:[SKAction repeatActionForever:[SKAction animateWithTextures:heroRideTextureArray
+                                                                                timePerFrame:frameRate
+                                                                                      resize:NO
+                                                                                     restore:YES]] withKey:[NSString stringWithFormat:@"kWeaponRide%@", direction]];
+             }];
+        
+    }
+    
+    if ([direction isEqualToString:@"Centre"]) {
+        [weapon runAction:[SKAction animateWithTextures:heroRideTextureArray timePerFrame:frameRate = 0.01]];
+    }
+}
+
+
++ (void)heroRide: (SKSpriteNode *)hero toDirection: (NSString *)direction withFrameRate: (float) frameRate {
+    
+    NSArray *heroRideTextureArray = [UnitAnimator animateUnitWithTextureAtlasName:@"HeroRide"];
+    NSArray *heroRideLeftTextureArray = [UnitAnimator animateUnitWithTextureAtlasName:@"HeroRideLeft"];
+    NSArray *heroRideRightTextureArray = [UnitAnimator animateUnitWithTextureAtlasName:@"HeroRideRight"];
+    
+    if ([direction isEqualToString:@"Left"]) {
+        [hero runAction:[SKAction animateWithTextures:heroRideLeftTextureArray timePerFrame:frameRate]
+              completion:^{
+                  [hero runAction:[SKAction repeatActionForever:[SKAction animateWithTextures:heroRideTextureArray
+                                                                                  timePerFrame:frameRate
+                                                                                        resize:NO
+                                                                                       restore:YES]] withKey:[NSString stringWithFormat:@"kHeroRide%@", direction]];
+              }];
+    }
+    
+    if ([direction isEqualToString:@"Right"]) {
+        [hero runAction:[SKAction animateWithTextures:heroRideRightTextureArray timePerFrame:frameRate]
+              completion:^{
+                  [hero runAction:[SKAction repeatActionForever:[SKAction animateWithTextures:heroRideTextureArray
+                                                                                  timePerFrame:frameRate
+                                                                                        resize:NO
+                                                                                       restore:YES]] withKey:[NSString stringWithFormat:@"kHeroRide%@", direction]];
+              }];
+        
+    }
+    
+    if ([direction isEqualToString:@"Centre"]) {
+        [hero runAction:[SKAction animateWithTextures:heroRideTextureArray timePerFrame:frameRate = 0.01]];
+    }
+    
+}
+
++ (void)heroHorseRide: (SKSpriteNode *)horse toDirection: (NSString *)direction withFrameRate: (float) frameRate {
     
     NSArray *gallopTextureArray = [UnitAnimator animateUnitWithTextureAtlasName:@"Gallop"];
     NSArray *gallopLeftTextureArray = [UnitAnimator animateUnitWithTextureAtlasName:@"GallopLeft"];
     NSArray *gallopRightTextureArray = [UnitAnimator animateUnitWithTextureAtlasName:@"GallopRight"];
-
     
     if ([direction isEqualToString:@"Left"]) {
-        [horse runAction:[SKAction animateWithTextures:gallopLeftTextureArray timePerFrame:0.03f]
+        [horse runAction:[SKAction animateWithTextures:gallopLeftTextureArray timePerFrame:frameRate]
               completion:^{
             [horse runAction:[SKAction repeatActionForever:[SKAction animateWithTextures:gallopTextureArray
-                                                                            timePerFrame:0.03f
+                                                                            timePerFrame:frameRate
                                                                                   resize:NO
-                                                                                 restore:YES]] withKey:@"horseGallopLeft"];
+                                                                                 restore:YES]] withKey:[NSString stringWithFormat:@"kHeroHorseRide%@", direction]];
         }];
     }
     
-    else if ([direction isEqualToString:@"Right"]) {
-        [horse runAction:[SKAction animateWithTextures:gallopRightTextureArray timePerFrame:0.03f]
+    if ([direction isEqualToString:@"Right"]) {
+        [horse runAction:[SKAction animateWithTextures:gallopRightTextureArray timePerFrame:frameRate]
               completion:^{
             [horse runAction:[SKAction repeatActionForever:[SKAction animateWithTextures:gallopTextureArray
-                                                                            timePerFrame:0.03f
+                                                                            timePerFrame:frameRate
                                                                                   resize:NO
-                                                                                 restore:YES]] withKey:@"horseGallopRight"];
+                                                                                 restore:YES]] withKey:[NSString stringWithFormat:@"kHeroHorseRide%@", direction]];
         }];
 
+    }
+    
+    if ([direction isEqualToString:@"Centre"]) {
+        [horse runAction:[SKAction animateWithTextures:gallopTextureArray timePerFrame:frameRate = 0.01]];
     }
 
 }

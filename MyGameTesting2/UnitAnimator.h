@@ -15,7 +15,10 @@
 @interface UnitAnimator : NSObject
 
 + (NSArray *)animateUnitWithTextureAtlasName: (NSString *)atlasName;
-+ (void)heroRide: (SKSpriteNode *)horse withDirection: (NSString *)direction WithFrameRate: (float) frameRate;
++ (void)heroHorseRide: (SKSpriteNode *)horse toDirection: (NSString *)direction withFrameRate: (float) frameRate;
++ (void)heroRide: (SKSpriteNode *)horse toDirection: (NSString *)direction withFrameRate: (float) frameRate;
++ (void)heroWeaponRide: (SKSpriteNode *)weapon toDirection: (NSString *)direction withFrameRate: (float) frameRate andWeapon: (NSString *)weaponName;
+
 + (void)setupShadowForUnit: (Unit *)unit WithFrameRate: (float)frameRate;
 
 @end

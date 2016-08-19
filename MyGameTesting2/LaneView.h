@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface LaneView : UIView
+@property (nonatomic, strong) UITapGestureRecognizer *tapGestureRecognizer;
+
+- (instancetype)initWithLaneNumber: (NSUInteger)lanenumber;
 
 @end

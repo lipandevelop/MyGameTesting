@@ -10,4 +10,6 @@
 
 @interface MountedHero : Unit
 
+@property (nonatomic, strong) Weapon *secondaryWeapon;
+
 @end

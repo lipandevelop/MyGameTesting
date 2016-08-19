@@ -29,6 +29,13 @@
 		0A9937651D65811B00451749 /* GallopRight.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 0A9937641D65811B00451749 /* GallopRight.atlas */; };
 		0A9937681D658FC400451749 /* UnitInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9937671D658FC400451749 /* UnitInitializer.m */; };
 		0A99376C1D65954400451749 /* LaneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A99376B1D65954400451749 /* LaneView.m */; };
+		0A9937721D66CA3800451749 /* HeroRide.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 0A9937711D66CA3800451749 /* HeroRide.atlas */; };
+		0A9937741D66CD0700451749 /* HeroRideRight.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 0A9937731D66CD0700451749 /* HeroRideRight.atlas */; };
+		0A9937761D66D2CA00451749 /* HeroRideLeft.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 0A9937751D66D2CA00451749 /* HeroRideLeft.atlas */; };
+		0A99377F1D66DAEC00451749 /* Weapon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A99377E1D66DAEC00451749 /* Weapon.m */; };
+		0A99378B1D66E24800451749 /* WeaponKnifeRide.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 0A9937881D66E24800451749 /* WeaponKnifeRide.atlas */; };
+		0A99378C1D66E24800451749 /* WeaponKnifeRideLeft.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 0A9937891D66E24800451749 /* WeaponKnifeRideLeft.atlas */; };
+		0A99378D1D66E24800451749 /* WeaponKnifeRideRight.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 0A99378A1D66E24800451749 /* WeaponKnifeRideRight.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +75,14 @@
 		0A9937671D658FC400451749 /* UnitInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitInitializer.m; sourceTree = "<group>"; };
 		0A99376A1D65954400451749 /* LaneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaneView.h; sourceTree = "<group>"; };
 		0A99376B1D65954400451749 /* LaneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaneView.m; sourceTree = "<group>"; };
+		0A9937711D66CA3800451749 /* HeroRide.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = HeroRide.atlas; sourceTree = "<group>"; };
+		0A9937731D66CD0700451749 /* HeroRideRight.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = HeroRideRight.atlas; sourceTree = "<group>"; };
+		0A9937751D66D2CA00451749 /* HeroRideLeft.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = HeroRideLeft.atlas; sourceTree = "<group>"; };
+		0A99377D1D66DAEC00451749 /* Weapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weapon.h; sourceTree = "<group>"; };
+		0A99377E1D66DAEC00451749 /* Weapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weapon.m; sourceTree = "<group>"; };
+		0A9937881D66E24800451749 /* WeaponKnifeRide.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = WeaponKnifeRide.atlas; sourceTree = "<group>"; };
+		0A9937891D66E24800451749 /* WeaponKnifeRideLeft.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = WeaponKnifeRideLeft.atlas; sourceTree = "<group>"; };
+		0A99378A1D66E24800451749 /* WeaponKnifeRideRight.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = WeaponKnifeRideRight.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +160,8 @@
 				0A9937561D65271100451749 /* MountedHero.m */,
 				0A9937521D65268200451749 /* Unit.h */,
 				0A9937531D65268200451749 /* Unit.m */,
+				0A99377D1D66DAEC00451749 /* Weapon.h */,
+				0A99377E1D66DAEC00451749 /* Weapon.m */,
 			);
 			name = SKSpriteNodes;
 			sourceTree = "<group>";
@@ -152,6 +169,12 @@
 		0A99375B1D6549FC00451749 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				0A9937881D66E24800451749 /* WeaponKnifeRide.atlas */,
+				0A9937891D66E24800451749 /* WeaponKnifeRideLeft.atlas */,
+				0A99378A1D66E24800451749 /* WeaponKnifeRideRight.atlas */,
+				0A9937751D66D2CA00451749 /* HeroRideLeft.atlas */,
+				0A9937731D66CD0700451749 /* HeroRideRight.atlas */,
+				0A9937711D66CA3800451749 /* HeroRide.atlas */,
 				0A9937641D65811B00451749 /* GallopRight.atlas */,
 				0A9937601D657F4300451749 /* GallopLeft.atlas */,
 				0A9937311D6520A500451749 /* GallopShadow.atlas */,
@@ -230,14 +253,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9937741D66CD0700451749 /* HeroRideRight.atlas in Resources */,
 				0A9937321D6520A500451749 /* GallopShadow.atlas in Resources */,
+				0A9937721D66CA3800451749 /* HeroRide.atlas in Resources */,
 				0A99375D1D65681100451749 /* Blank.png in Resources */,
 				0A9937651D65811B00451749 /* GallopRight.atlas in Resources */,
 				0A03753F1D629A58002059D8 /* GameScene.sks in Resources */,
+				0A99378B1D66E24800451749 /* WeaponKnifeRide.atlas in Resources */,
 				0A03754A1D629A58002059D8 /* LaunchScreen.storyboard in Resources */,
+				0A99378C1D66E24800451749 /* WeaponKnifeRideLeft.atlas in Resources */,
+				0A99378D1D66E24800451749 /* WeaponKnifeRideRight.atlas in Resources */,
 				0A0375471D629A58002059D8 /* Assets.xcassets in Resources */,
 				0A9937611D657F4300451749 /* GallopLeft.atlas in Resources */,
 				0A0375451D629A58002059D8 /* Main.storyboard in Resources */,
+				0A9937761D66D2CA00451749 /* HeroRideLeft.atlas in Resources */,
 				0A99372A1D64FA4A00451749 /* Gallop.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +285,7 @@
 				0A9937681D658FC400451749 /* UnitInitializer.m in Sources */,
 				0A0375421D629A58002059D8 /* GameViewController.m in Sources */,
 				0A9937471D6525E400451749 /* BasicAnimatedNode.m in Sources */,
+				0A99377F1D66DAEC00451749 /* Weapon.m in Sources */,
 				0A9937571D65271100451749 /* MountedHero.m in Sources */,
 				0A03753A1D629A58002059D8 /* AppDelegate.m in Sources */,
 				0A99376C1D65954400451749 /* LaneView.m in Sources */,
